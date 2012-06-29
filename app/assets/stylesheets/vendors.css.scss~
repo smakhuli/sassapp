@@ -1,0 +1,25 @@
+// Place all the styles related to the Vendors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$blue: #3bbfce;
+
+body {
+  color: green; }
+
+h1 {
+  color: $blue;}
+
+p {
+  font: 10px/8px;             // Plain CSS, no division
+  $width: 1000px;
+  width: $width/2;            // Uses a variable, does division
+  height: (100px/2);          // Uses parentheses, does division
+  margin-left: 50px + 8px/2px; // Uses +, does division
+  color: red;
+}
+
+a {
+  color: red;
+  &:hover { color: $blue; }
+  &:visited { color: #c458cb; }
+}
